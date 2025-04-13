@@ -1,0 +1,87 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 190px;
+    border: 1px solid rgb(175, 175, 175);
+    background-color: hsl(226, 11%, 37%);
+    border-radius: 10px;
+    padding:20px;
+}
+.img_label{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.img_label .img{
+    border-radius: 10px;
+    height: 50px;
+    background-color: #fff;
+}
+.Changewhite{
+    background-color: #fff !important;
+    color: #333 !important;
+    border: 1px solid rgb(225, 225, 225);
+}
+.img_label .label {
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.trunDark{
+    color: #000 !important;
+}
+.label span{
+    font-weight: 550;
+    color: #fff;
+    font-size: 18px;
+}
+.label p{
+    color: rgb(217, 217, 217);
+}
+.remove_active{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    height:100px;
+    justify-content: space-between;
+}
+button{
+    background-color: hsl(226, 11%, 37%);
+    border:1px solid #fff;
+    color: #fff;
+    padding:5px 10px;
+    
+}
+button:hover{
+    border:1px solid #fff;
+    
+}
+.toggle_switch{
+    background-color: #b8b5b5;
+    width: 45px;
+    height: 20px;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.toggle{
+    position: absolute;
+    left: 0;
+    width: 44%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    transition: all .3s ease;
+}
+.toggle.active{
+    left: 56%;
+}
+.toggle_switch.changeColor{
+    background-color: hsl(3, 77%, 44%);
+    color: #091540;
+}

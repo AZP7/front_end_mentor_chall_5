@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans";
+  overflow: visible;
+  scrollbar-width: none;
+}
+#root {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.extension_container{
+  background:linear-gradient(180deg, #040918 0%, #091540 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.white{
+  background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+}
+.trunWhite{
+  background-color: #fff !important;
+}
+.turndark{
+  color: #333 !important;
+}
+.extension_header {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(52, 52, 52);
+  padding: 10px;
+  border-radius: 10px;
+}
+.light_dark{
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.sunLogo{
+  padding: 10px;
+  background-color: rgb(112, 110, 110);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.extension_logo{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.extension_logo h1{
+  margin-bottom: 20px;
+  color: #fff;
+}
+.btn_container button{
+  margin: 10px;
+  border-radius: 30px;
+  padding:10px 20px;
+  outline: none;
+  border: 1px solid rgb(168, 168, 168);
+}
+.extension_item{
+  display: flex;
+  max-width: 1300px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.activeBtn{
+  background-color: red;
+  color: #fff;
+}
+@media(min-width:1100px){
+  #root{
+    height: 150vh !important;
+  }
+  .extension_header{
+    height: 5%;
+    padding: 30px 10px;
+    margin-bottom: 20px;
+  }
+  .extension_header svg:first-child path{
+    width: 150px;
+  }
+  .extension_header svg:last-child{
+    width: 40px;
+  }
+  .extension_logo{
+    height: 8%;
+  }
+  .extension_logo{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .extension_logo h1{
+    font-size: 1.5rem;
+  }
+  .btn_container button{
+    font-size: .8rem;
+    margin: 5px;
+  }
+  .extension_item{
+    padding-left: 100px;
+    margin-top: 30px;
+    justify-content: flex-start;
+
+  }
+}
